@@ -24,6 +24,7 @@
   },
   "keywords": [
     "recursive",
+    "match",
     "regex",
     "strings",
     "nested"
