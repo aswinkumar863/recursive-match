@@ -1,0 +1,59 @@
+{
+  "name": "recursive-match",
+  "version": "1.0.0",
+  "description": "Recursively match input string with begin and end delimiters",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aswinkumar863/recursive-match.git"
+  },
+  "scripts": {
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
+  },
+  "keywords": [
+    "recursive",
+    "regex",
+    "strings",
+    "nested"
+  ],
+  "homepage": "https://github.com/aswinkumar863/recursive-match#readme",
+  "bugs": {
+    "url": "https://github.com/aswinkumar863/recursive-match/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Aswin Kumar",
+    "email": "aswinkumar863@gmail.com"
+  },
+  "funding": [
+    {
+      "type": "paypal",
+      "url": "https://paypal.me/aswinkumar863"
+    },
+    {
+      "type": "buymeacoffee",
+      "url": "https://www.buymeacoffee.com/aswinkumar863"
+    }
+  ],
+  "devDependencies": {
+    "@types/jest": "^27.0.1",
+    "jest": "^27.1.1",
+    "prettier": "^2.4.0",
+    "ts-jest": "^27.0.5",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.4.3"
+  }
+}
