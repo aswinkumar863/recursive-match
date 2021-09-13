@@ -4,14 +4,18 @@ Recursively match input string with begin and end delimiters.
 
 ![build status](https://img.shields.io/travis/aswinkumar863/recursive-match)
 ![npm](https://img.shields.io/npm/v/recursive-match)
+![dependencies](https://status.david-dm.org/gh/aswinkumar863/recursive-match.svg)
 ![downloads](https://img.shields.io/npm/dw/recursive-match)
 ![license](https://img.shields.io/npm/l/recursive-match)
 
+## Highlights
+
 - Builds with typescript.
+- No dependencies.
 - Supports both string and regex delimiters.
 - Supports nested matches.
 
-**Note:** Identical delimiters not supported.
+**Note:** May not be suitable for handling identical delimiters.
 
 ## Installation
 
@@ -35,7 +39,7 @@ recursiveMatch('abc{{{de}}}fgh', /{+/, /}+/)
 ```
 ## API
 
-**recursiveMatch(string, begin, end)**
+### `recursiveMatch(string, begin, end)`
 
 - **string**  `{string}` - The input string to match recursively.
 - **begin** `{string|RegExp}` - The begin delimiter.
