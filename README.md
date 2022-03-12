@@ -4,7 +4,7 @@ Recursively match input string with begin and end delimiters.
 
 ![build status](https://img.shields.io/travis/aswinkumar863/recursive-match)
 ![npm](https://img.shields.io/npm/v/recursive-match)
-![dependencies](https://status.david-dm.org/gh/aswinkumar863/recursive-match.svg)
+![dependencies](https://img.shields.io/librariesio/release/npm/recursive-match)
 ![downloads](https://img.shields.io/npm/dw/recursive-match)
 ![license](https://img.shields.io/npm/l/recursive-match)
 
